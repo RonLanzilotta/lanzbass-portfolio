@@ -12,8 +12,7 @@
   font-size: 85%;
   padding: 3%;
   background-image: linear-gradient(to bottom, rgb(36, 120, 118), rgb(112, 75, 135));
-  border-bottom: 5px solid rgb(102, 68, 120);
-  border-style:double
+  border-bottom: 5px double rgb(102, 68, 120);
 }
 
 .image {
