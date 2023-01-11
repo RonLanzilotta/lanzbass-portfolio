@@ -13,7 +13,7 @@ export default function Entry({ entries }) {
       };
 
   return (
-    <div>
+    <div className="app">
         {toggle && <Modal entry={displayItem} display={display} />}
         {entries.map((entry, index) => {
             if (entry.display) {
@@ -28,15 +28,3 @@ export default function Entry({ entries }) {
     </div>
   );
 }
-
-// paste up to the return for example
-
-// (
-//     <div>
-//       {entries.map((entry, index) => 
-//       {if (entries.display === true) {
-//         <img className="image" src={entry.img} key={index}/>}
-//     })}
-//     </div>
-//   );
-// }
