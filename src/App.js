@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState, useEffect } from "react";
+import Nav from "./Nav.jsx";
+import Entry from "./Entry.jsx";
+import "./App.css";
 
 function App() {
+  const [entries, setEntries] = useState([]);
+
+  useEffect(() => {
+    fetchEntries();
+  }, []);
+
+  const fetchEntries = () => {
+    fetch(`http://localhost:3000/`)
+      .then((res) => res.json())
+      .then((data) => setEntries(data));
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main>
+      <Nav className="nav"/>
+      <Entry entries={entries} />
+    </main>
   );
 }
 
