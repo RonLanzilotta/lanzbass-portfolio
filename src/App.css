@@ -5,9 +5,15 @@
 }
 
 .nav {
-  padding: 30px;
-  background-color: rgb(43, 43, 108);
-  border-bottom: ;
+  color: aliceblue;
+  position: fixed;
+  width: 100vw;
+  font-weight: bold;
+  font-size: 85%;
+  padding: 3%;
+  background-image: linear-gradient(to bottom, rgb(36, 120, 118), rgb(112, 75, 135));
+  border-bottom: 5px solid rgb(102, 68, 120);
+  border-style:double
 }
 
 .image {

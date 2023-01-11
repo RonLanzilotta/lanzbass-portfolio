@@ -11,7 +11,7 @@ function App() {
   }, []);
 
   const fetchEntries = () => {
-    fetch(`http://localhost:3000/`)
+    fetch(`https://recording-credits-api-production.up.railway.app/`)
       .then((res) => res.json())
       .then((data) => setEntries(data));
   };
