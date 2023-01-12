@@ -19,7 +19,7 @@ function App() {
   return (
     <main>
       <Nav className="nav"/>
-      <Entry entries={entries} />
+      <Entry className="app" entries={entries} />
     </main>
   );
 }
