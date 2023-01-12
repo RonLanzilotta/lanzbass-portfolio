@@ -11,7 +11,7 @@ export default function Entry({ entries }) {
   };
 
   return (
-    <div className="field">
+    <div className="app">
       {toggle && (
           <Modal entry={displayItem} display={display} />
       )}

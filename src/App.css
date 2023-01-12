@@ -12,11 +12,15 @@
 
 .nav {
   /* position: fixed; */
+  font-family: 'Major Mono Display', monospace;
   color: aliceblue;
   width: 100vw;
   font-weight: bold;
-  font-size: 85%;
+  font-size: 2vh;
+  letter-spacing: 5px;
+  text-shadow: 1px 1px 2px rgb(10, 40, 174), 0 0 1em rgb(182, 48, 153), 0 0 0.2em;
   padding: 2%;
+  padding-left: 4%;
   background-image: linear-gradient(to bottom, rgb(36, 120, 118), rgb(125, 90, 146));
   border-bottom: 7px double rgb(102, 68, 120);
 }
@@ -39,14 +43,23 @@
 
 .modal {
   /* margin: 20% 0 0 -50%; */
-  margin-top: 33vh;
-  margin-right: 62vw;
-  display: flex;
-  width: 12vw;
   position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 12vh;
+  width: 12vw;
   z-index: 999;
   border-radius: 3px;
+  animation: fadeIn 1s; 
+
 }
+
+@keyframes fadeIn {
+  0% {opacity: 0; }
+  100% { opacity: 1; }
+}
+
 
 .modalImg {
   height: 35vw;
@@ -62,11 +75,10 @@ ul {
   flex-direction: column;
   justify-content: space-evenly;
   align-content: space-around;
-  
-
 }
 
 li, a {
+
   font-weight: 500;
   font-size: 2vw;
   padding: 0.5%;
