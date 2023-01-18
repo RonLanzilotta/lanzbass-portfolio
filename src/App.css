@@ -10,8 +10,12 @@
   justify-content: space-evenly;
 }
 
+.invisible {
+  opacity: 0;
+}
 .nav {
-  /* position: fixed; */
+  position: fixed;
+  margin-top: -22px;
   font-family: 'Major Mono Display', monospace;
   color: aliceblue;
   width: 100vw;
@@ -42,7 +46,6 @@
 }
 
 .modal {
-  /* margin: 20% 0 0 -50%; */
   position: fixed;
   display: flex;
   justify-content: center;
