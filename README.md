@@ -1,5 +1,6 @@
 ![](/imgs/header.png)
 <br>
+
 # Personal Recording Portfolio
 
 This project is a portfolio for my recording work as a session bass player. The portfolio includes records that I've made with longtime collaborators, singles that I've recorded for hire, and personal lo-fi creative explorations. The archive can be updated via a remote API which I built for this project. This webpage makes calls to the API for its data.
@@ -9,6 +10,7 @@ This project is a portfolio for my recording work as a session bass player. The 
 ![](/imgs/homescreen.png)
 <br>
 <br>
+
 ## Getting Around
 
 To explore, users simply hover over the album artwork and on click, will get a modal that contains the info for the recording project. Click the modal again to close it.
@@ -18,6 +20,7 @@ To explore, users simply hover over the album artwork and on click, will get a m
 ![](/imgs/modal.png)
 <br>
 <br>
+
 ## Technologies Implemented
 
 | Backend         | Frontend                 |
@@ -31,6 +34,7 @@ To explore, users simply hover over the album artwork and on click, will get a m
 | * Railway       |                          |
 | * JavaScript    |                          |
 <br>
+
 ## Future Development
 
 * Filtered search bar
